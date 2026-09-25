@@ -127,6 +127,32 @@ Esto puede resultar útil en interfaces donde el comportamiento está asociado a
 
 ---
 
+### 🛡️ Safe Mode
+
+Es una versión más controlada para páginas donde la carga puede tardar más o no quieres que el script siga haciendo clic si algo se queda bloqueado.
+
+Además de lo anterior, comprueba si el contenido de la página realmente ha cambiado después del clic.
+
+También incluye:
+
+* Timeout de carga.
+* Límite máximo de clics.
+* Comprobación periódica del contenido.
+* Revisión del botón antes de hacer cada clic.
+* Registro con hora exacta.
+* Tiempo desde el inicio.
+* Tiempo que ha tardado cada carga.
+* Parada automática si no detecta cambios.
+* Resumen al terminar.
+
+La idea es evitar el típico:
+
+**clic → esperar 2,5 s → clic → esperar 2,5 s → clic**
+
+cuando la página en realidad todavía está cargando.
+
+---
+
 ## ⚠️ Limitaciones
 
 Este script no intenta ser un crawler universal ni pretende derrotar a Skynet.
@@ -178,11 +204,3 @@ La regla es sencilla:
 Deja que la página respire.
 
 ---
-
-Haz con él lo que quieras. Preferiblemente cosas útiles.
-
----
-
-## 👤 Author
-
-**Zyanetralys**
